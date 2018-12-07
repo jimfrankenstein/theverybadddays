@@ -1,0 +1,31 @@
+# Site settings
+title: The Very Bad Days | Awesome Rock Band for Music!
+email: admin@theverybaddays.com
+description: Two scientists, so preoccupied with whether or not they could that they didn't stop to think if they should.
+keywords: "rock, music, jim frankenstein, daniel goodroad, very bad days, alexander and the terrible horrible no good very bad days, minneapolis, music, book band, avocado"
+baseurl: ""
+url: "https://theverybaddays.com"
+
+# Social settings
+twitter_username: theverybaddays
+github_username:  jimfrankenstein
+twitter_url: "https://twitter.com/theverybaddays"
+facebook_url: "https://facebook.com/theverybaddays"
+instagram_url: "https://instagram.com/theverybaddays"
+soundcloud_url: "https://soundcloud.com/theverybaddays"
+
+# Build settings
+markdown: kramdown
+permalink: /post/:title/
+image_path: "/images"
+logo_img: "logo.png"
+
+# Pagination
+paginate: 12
+paginate_path: "/page/:num"
+
+# Exclusions and Gems
+exclude:
+  - firebase.json
+
+gems: [octopress-autoprefixer,jekyll-coffeescript,jekyll-paginate]
