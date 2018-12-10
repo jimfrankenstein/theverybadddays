@@ -1,0 +1,11 @@
+body {
+  background: var(--main-bkg-color);
+}
+
+img.main-promo-pic {
+  display: block;
+  width: 100vw;
+  margin-top: 5vw;
+  border-bottom: 1px solid var(--dark-text);
+  @include color-filter();
+}

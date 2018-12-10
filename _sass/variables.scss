@@ -1,0 +1,59 @@
+// colors
+//
+
+:root {
+  --main-bkg-color: #fff;
+  --light-text:  #fff;
+  --dark-text: #000;
+  // --highlight-color: #F224F2;
+  // --highlight-color-hover: #F992F9;
+
+  --highlight-color: #f77430;
+  --highlight-color-hover: #FFA271;
+
+  --highlight-speed: 250ms;
+
+  --hue-rotation: 0deg;
+}
+
+html.theme--dark {
+  --main-bkg-color: #000;
+  --light-text:  #000;
+  --dark-text: #fff;
+  --highlight-color: #F224F2;
+  --highlight-color-hover: #F992F9;
+}
+
+$dark: #111;
+$light: #fff;
+
+$orange: #FF7E00;
+$orange-mt: #B57E47;
+
+$green: #A2D729;
+$green-mt: #859E67;
+
+$blue: #29C3E6;
+$blue-mt: #8FB3BC;
+
+// sizes
+//
+
+$max-width: 140rem;
+
+// fonts
+//
+
+$jfi-twitter: "\e900";
+$jfi-facebook: "\e901";
+$jfi-instagram: "\e902";
+$jfi-soundcloud: "\e903";
+$jfi-about: "\e904";
+$jfi-link: "\e905";
+
+// breakpoints
+//
+
+$break-narrow: 700px;
+$break-mid: 1024px;
+$break-wide: 1440px;

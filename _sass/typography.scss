@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Bobby Jones Soft';
+    src: url('../fonts/BobbyJonesSoft-Regular.woff2') format('woff2'),
+        url('../fonts/BobbyJonesSoft-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    transition: color var(--highlight-speed);
+  }
+}

@@ -1,0 +1,146 @@
+h1.main-headline,
+h2.sub-headline,
+h3.bottom-line {
+  width: 100vw;
+  margin: 0;
+  font-family: "Bobby Jones Soft", sans-serif;
+  color: var(--gray-10);
+  overflow: hidden;
+
+  span {
+    display: block;
+    text-align: center;
+    max-width: 100vw;
+
+    a {
+      color: var(--highlight-color);
+      @include color-filter();
+
+      &:hover {
+        color: var(--highlight-color-hover);
+      }
+    }
+
+    &.is-hidden {
+      display: none !important;
+    }
+  }
+}
+
+h1.main-headline {
+  .a { @include mhs(21.3vw); }
+  .b {
+    display: flex;
+    .ba {
+      .baa { @include mhs(10vw); }
+      .bab {
+        @include mhs(11.5vw);
+        color: var(--highlight-color);
+        @include color-filter();
+      }
+    }
+    .bb {
+      display: inline-block;
+      padding-left: 2vw;
+      transform: translateY(-.45vw);
+      @include mhs(22.4vw);
+    }
+  }
+  .c { @include mhs(26.5vw); }
+  .d {
+    word-spacing: -3vw;
+    @include mhs(29.2vw);
+  }
+  .e {
+    color: var(--highlight-color);
+    @include color-filter();
+    word-spacing: -.9vw;
+    @include mhs(17.2vw);
+
+    // position: sticky;
+    // top: 16.67vw;
+  }
+  .f {
+    word-spacing: -1vw;
+    @include mhs(16.5vw);
+
+    margin-top: 8vw;
+  }
+  .g { @include mhs(8.3vw); }
+  .h {
+    word-spacing: -1vw;
+    @include mhs(13.8vw);
+  }
+  .i {
+    word-spacing: -.35vw;
+    @include mhs(11vw);
+
+    span {
+      display: inline;
+    }
+  }
+}
+
+h2.sub-headline {
+  margin-top: 8vw;
+
+  .a {
+    word-spacing: -1vw;
+    @include mhs(13.52vw);
+  }
+
+  .b {
+    word-spacing: -.8vw;
+    @include mhs(10.62vw);
+  }
+
+  .c {
+    word-spacing: -.8vw;
+    @include mhs(12.76vw);
+  }
+
+  .d {
+    word-spacing: -1vw;
+    @include mhs(17.5vw);
+  }
+
+  .e {
+    display: flex;
+    margin-top: 8vw;
+    word-spacing: -.5vw;
+    @include mhs(10.37vw);
+
+    span {
+      color: var(--highlight-color);
+      @include color-filter();
+    }
+  }
+
+  .f {
+    word-spacing: -1vw;
+    @include mhs(21.82vw);
+  }
+
+  .g {
+    word-spacing: -1vw;
+    @include mhs(14.88vw);
+  }
+}
+
+h3.bottom-line {
+  margin: 16vw 0 8vw;
+  overflow: visible;
+
+  span {
+    @include mhs(5vw);
+
+    a {
+      color: var(--gray-10);
+
+      &:hover {
+        color: var(--highlight-color);
+        @include color-filter();
+      }
+    }
+  }
+}
