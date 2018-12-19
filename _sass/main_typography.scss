@@ -82,11 +82,11 @@ h1.main-headline {
 }
 
 h2.sub-headline {
-  margin-top: 8vw;
+  padding-top: 8vw;
 
   .a {
     word-spacing: -1vw;
-    @include mhs(13.52vw);
+    @include mhs(13.5vw);
   }
 
   .b {
