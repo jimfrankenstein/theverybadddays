@@ -1,8 +1,3 @@
-@mixin mhs($size: 10vw) {
-  font-size: $size;
-  line-height: $size * .85;
-}
-
 @mixin color-filter() {
   filter: hue-rotate(var(--hue-rotation));
 }

@@ -2,10 +2,32 @@ body {
   background: var(--main-bkg-color);
 }
 
+.overlogo {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background: url('../images/cocked-a.svg') 50% 50% no-repeat;
+  background-size: contain;
+
+  svg {
+    fill: #fff;
+    display: block;
+    display: none;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 img.main-promo-pic {
   display: block;
   width: 100vw;
-  margin-top: 5vw;
+  margin: 5vw 0;
   border-bottom: 1px solid var(--dark-text);
   @include color-filter();
 }

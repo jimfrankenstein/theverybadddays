@@ -1,0 +1,29 @@
+[debug] [2019-02-24T19:40:19.179Z] ----------------------------------------------------------------------
+[debug] [2019-02-24T19:40:19.182Z] Command:       /usr/local/Cellar/node/11.9.0/bin/node /usr/local/bin/firebase serve
+[debug] [2019-02-24T19:40:19.182Z] CLI Version:   6.1.1
+[debug] [2019-02-24T19:40:19.182Z] Platform:      darwin
+[debug] [2019-02-24T19:40:19.182Z] Node Version:  v11.9.0
+[debug] [2019-02-24T19:40:19.183Z] Time:          Sun Feb 24 2019 13:40:19 GMT-0600 (Central Standard Time)
+[debug] [2019-02-24T19:40:19.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-24T19:40:19.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-24T19:40:19.198Z] > authorizing via signed-in user
+[debug] [2019-02-24T19:40:19.198Z] [iam] checking project theverybaddays for permissions ["firebase.projects.get"]
+[debug] [2019-02-24T19:40:19.200Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-24T19:40:19.200Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-24T19:40:19.448Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-24T19:40:19.455Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/theverybaddays:testIamPermissions  
+
+[debug] [2019-02-24T19:40:19.775Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-24T19:40:19.776Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/theverybaddays  
+ 
+[debug] [2019-02-24T19:40:20.139Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/brianreed/Sites/verybaddays'...
+[info] 
+[debug] [2019-02-24T19:40:20.142Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/342160622111/clients/_:getWebAppConfig  
+ 
+[debug] [2019-02-24T19:40:20.491Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: _site
+[info] ✔  hosting: Local server: http://localhost:5000
