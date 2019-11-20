@@ -1,10 +1,8 @@
 <!doctype html>
 <html lang="en">
   {% include head.html %}
-  <body class="{% if page.theme %}landing{% endif %}" data-theme="{% if page.theme %}{{ page.theme }}{% else %}{{ site.posts.first.theme }}{% endif %}">
-    <main>
-      {{ content }}
-    </main>
+  <body class="{% if page.theme %}landing{% endif %}">
+    {{ content }}
     {% include javascript.html %}
   </body>
 </html>
