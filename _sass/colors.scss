@@ -34,11 +34,13 @@
   :root {
     --main-background-color: var(--light);
     --text-color: var(--dark);
+
+    --link-color: var(--pink);
+    --link-color-hover: var(--pink-muted);
   }
 // }
 
-// @media (prefers-color-scheme: dark) {
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     --main-background-color: var(--dark);
     --text-color: var(--light);
