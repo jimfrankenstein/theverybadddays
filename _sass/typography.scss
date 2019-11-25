@@ -1,6 +1,22 @@
-body {
-  font: 24px/66px "Special Elite", "Courier", "Helvetica", sans-serif;
+html {
+  font: 18px/2.75 "Special Elite", "Courier", "Helvetica", sans-serif;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(20px + 4 * ((100vw - 320px) / (1120)));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+p {
+  font: inherit;
 }
 
 p .highlight {
