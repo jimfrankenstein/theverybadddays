@@ -16,34 +16,62 @@ $image_path: '/images';
   background: top center repeat-x url("/images/page-header.png");
   background-size: contain;
   width: 100%;
+  // height: 50vh;
+  // height: 32vw;
   height: 50vh;
+  max-height: 456px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
 }
 
-#page-intro {
-  padding: 0 24px 60px;
+.text-section {
+  padding: 0 36px;
 }
 
-#band-logo {
-  display: block;
-  width: 116%;
-  margin-left: -10%;
-}
-
-#page-intro > article {
+.text-section > article {
   width: 100%;
   max-width: 456px;
   margin: 0 auto;
 }
 
+#page-intro {
+  padding-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logo-area {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#band-logo-min {
+  display: block;
+  width: 100%;
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+#band-logo-full {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bio-a {
+}
+
 @media (prefers-color-scheme: dark) {
   #page-header,
-  #band-logo,
+  .band-logo,
   .drip-header,
   .drip-content {
-    filter: invert(100%);
+    // filter: invert(100%);
   }
 }
