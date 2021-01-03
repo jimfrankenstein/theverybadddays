@@ -1,25 +1,37 @@
-body {
-  font: 18px/30px "Helvetica Neue", Helvetica, sans-serif;
+html {
+  font: 16px/2.75 "Special Elite", "Courier", "Helvetica", sans-serif;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+.large-text {
+  font-size: 24px;
+  line-height: 2;
+}
+
+p .highlight {
+  color: var(--pink);
+}
+
+.align-center {
+  text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: var(--highlight-color);
-  transition: color var(--highlight-speed);
-
-  &:hover {
-    color: var(--highlight-color-hover);
-  }
+  color: var(--link-color);
 }
 
-g a {
-  &:not(.dark-link) path {
-    fill: var(--highlight-color);
-    transition: fill var(--highlight-speed);
-    @include color-filter();
-  }
-
-  &:not(.static):hover path {
-    fill: var(--highlight-color-hover);
-  }
+a:hover {
+  color: var(--link-color-hover);
 }
